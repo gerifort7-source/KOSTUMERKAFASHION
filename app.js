@@ -1359,6 +1359,21 @@ fittingForm?.addEventListener('submit', function(e) {
   
   // Show loading
   showLuxuryNotification('Оформление записи...', 'syncing');
+    
+    // Отправка заявки в Telegram
+    if (window.TelegramBot) {
+        window.TelegramBot.sendFittingAppointment(appointmentData)
+            .then(success => {
+                if (!success) {
+                    console.warn('Ошибка отправки в Telegram');
+                }
+            })
+            .catch(error => {
+                console.error('Telegram отправка ошибка:', error);
+            });
+    } else {
+        console.warn('Telegram Bot не инициализирован. Проверьте, что telegram-bot.js подключен.');
+    }
   
   // Simulate appointment booking
   setTimeout(() => {
