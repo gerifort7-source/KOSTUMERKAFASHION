@@ -3,8 +3,7 @@
 
 // ВАЖНО: Замените эти значения на ваши настоящие
 const TELEGRAM_CONFIG = {
-    botToken: 'YOUR_BOT_TOKEN_HERE', // Получите у @BotFather
-    chatId: 'YOUR_CHAT_ID_HERE' // Chat ID для @irina_fashionstyle
+    botToken: '8580735762:AAHjQ9u46k_U6tOSDbBc8K_05O2sF8Ij9ZA', // Получите у @BotFather    chatId: 'YOUR_CHAT_ID_HERE' // Chat ID для @irina_fashionstyle
 };
 
 /**
