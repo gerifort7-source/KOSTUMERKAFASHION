@@ -1,0 +1,1096 @@
+{
+  "brand": {
+    "name": "КОСТЮМЕРКА",
+    "subtitle": "ДИЗАЙНЕРСКАЯ ОДЕЖДА",
+    "tagline": "Kostumerka — это не просто одежда. Это манифест индивидуальности и самовыражения.",
+    "description": "Дизайнерская одежда, созданная в коллаборации fashion-стилиста Ирины Радкевич и дизайнера Оксаны Школьниковой",
+    "features": [
+      "Эксклюзивность",
+      "Только проверенные материалы",
+      "Решение для смелых девушек, которые знают себе цену",
+      "Сексуальность"
+    ],
+    "showroom_address": "Брянск, пр-т Ленина, 12",
+    "contacts": {
+      "phone_irina": "+7-919-193-42-72 (Ирина)",
+      "phone_oksana": "+79206056001 (Оксана)",
+      "telegram": "@irina_fashionstyle",
+      "vk_page": "https://vk.com/kostumerka_fashion",
+      "vk_market": "https://vk.com/market-228925833"
+    },
+    "services": {
+      "fitting": "По предварительной записи в шоу-руме",
+      "delivery_bryansk": "Бесплатная доставка курьером по Брянску с возможностью примерки",
+      "delivery_russia": "Доставка по России (оплачивается клиентом)",
+      "worldwide_delivery": "Доставка по миру"
+    },
+    "about": "«Костюмерка» — это бренд уникальных дизайнерских изделий двух талантливых и творческих людей Ирины и Оксаны, которые знают, что такое индивидуальность, манкость и уникальность каждой девушки."
+  },
+  "products": [
+    {
+      "id": 1,
+      "name": "Перчатки митенки укорочённые",
+      "price": "8000 ₽",
+      "category": "Аксессуары",
+      "description": "Изысканные митенки из натуральной кожи с вышивкой ручной работы",
+      "image": "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=500&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1585497262862-8f6421b9c522?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Перчатки митенки",
+      "price": "10000 ₽",
+      "category": "Аксессуары",
+      "description": "Элегантные длинные митенки премиум качества",
+      "image": "https://images.unsplash.com/photo-1585497262862-8f6421b9c522?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1585497262862-8f6421b9c522?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Пальто-плащ",
+      "price": "50000 ₽",
+      "category": "Верхняя одежда",
+      "description": "Пальто из премиальной шерсти с вышивкой ручной работы, в комплекте пояс для самого красивого силуэта",
+      "image": "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=500&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Тренч трансформер",
+      "price": "25000 ₽",
+      "category": "Верхняя одежда",
+      "description": "Универсальный тренч с возможностью трансформации стиля",
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Плащ-пальто",
+      "price": "50000 ₽",
+      "category": "Верхняя одежда",
+      "description": "Элегантный плащ-пальто для истинных ценителей стиля",
+      "image": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Костюм из экозамши",
+      "price": "28000 ₽",
+      "category": "Костюмы",
+      "description": "Стильный костюм из высококачественной экозамши",
+      "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Корсет с эффектом утяжки",
+      "price": "8000 ₽",
+      "category": "Корсеты",
+      "description": "Изящный корсет для создания идеального силуэта",
+      "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Корсет с эффектом утяжки (вариант 2)",
+      "price": "8000 ₽",
+      "category": "Корсеты",
+      "description": "Альтернативная модель корсета с утяжкой",
+      "image": "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Корсет с эффектом утяжки (вариант 3)",
+      "price": "8000 ₽",
+      "category": "Корсеты",
+      "description": "Третий вариант элегантного корсета",
+      "image": "https://images.unsplash.com/photo-1580651214613-d17c8fc9cb55?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1580651214613-d17c8fc9cb55?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Костюм в горошек",
+      "price": "22000 ₽",
+      "category": "Костюмы",
+      "description": "Классический костюм в элегантный горошек",
+      "image": "https://images.unsplash.com/photo-1603851946761-b9b55fcce05c?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1603851946761-b9b55fcce05c?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Юбка из эко-замши мультиколор",
+      "price": "12000 ₽",
+      "category": "Юбки",
+      "description": "Юбка с бахромой из чёрной эко замши, отличный вариант для работы, выходов и на каждый день",
+      "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Платье с итальянским кружевом",
+      "price": "25000 ₽",
+      "category": "Платья",
+      "description": "Роскошное платье с эксклюзивным итальянским кружевом",
+      "image": "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Платье Шоколад",
+      "price": "25000 ₽",
+      "category": "Платья",
+      "description": "Элегантное платье в благородном шоколадном оттенке",
+      "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Костюм Розовый",
+      "price": "25000 ₽",
+      "category": "Костюмы",
+      "description": "Нежный костюм в изысканном розовом цвете",
+      "image": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Костюм Голубое небо",
+      "price": "25000 ₽",
+      "category": "Костюмы",
+      "description": "Воздушный костюм небесно-голубого оттенка",
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Костюм Колокольчики",
+      "price": "25000 ₽",
+      "category": "Костюмы",
+      "description": "Романтичный костюм с принтом колокольчики",
+      "image": "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Тренч с бахромой миди",
+      "price": "21000 ₽",
+      "category": "Верхняя одежда",
+      "description": "Стильный тренч миди длины с элегантной бахромой",
+      "image": "https://images.unsplash.com/photo-1585497262862-8f6421b9c522?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1585497262862-8f6421b9c522?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Куртка с бахромой из эко-замши",
+      "price": "18000 ₽",
+      "category": "Верхняя одежда",
+      "description": "Модная куртка из эко-замши с декоративной бахромой",
+      "image": "https://images.unsplash.com/photo-1603851946761-b9b55fcce05c?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1603851946761-b9b55fcce05c?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Тренч-жакет с бахромой",
+      "price": "26000 ₽",
+      "category": "Верхняя одежда",
+      "description": "Эксклюзивная модель тренч-жакет с бахромой от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Костюм из вареного денима",
+      "price": "28000 ₽",
+      "category": "Костюмы",
+      "description": "Эксклюзивная модель костюм из вареного денима от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Брюки-парашюты",
+      "price": "11000 ₽",
+      "category": "Брюки",
+      "description": "Эксклюзивная модель брюки-парашюты от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1603851946761-b9b55fcce05c?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1603851946761-b9b55fcce05c?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Куртка с бахромой лео",
+      "price": "18000 ₽",
+      "category": "Верхняя одежда",
+      "description": "Эксклюзивная модель куртка с бахромой лео от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Кейп из эко-замши",
+      "price": "6000 ₽",
+      "category": "Верхняя одежда",
+      "description": "Эксклюзивная модель кейп из эко-замши от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Пальто премиум",
+      "price": "47000 ₽",
+      "category": "Верхняя одежда",
+      "description": "Эксклюзивная модель пальто премиум от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Тренч из экозамши",
+      "price": "21000 ₽",
+      "category": "Верхняя одежда",
+      "description": "Эксклюзивная модель тренч из экозамши от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Юбка",
+      "price": "15000 ₽",
+      "category": "Юбки",
+      "description": "Эксклюзивная модель юбка от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Ветровка-рубашка",
+      "price": "12000 ₽",
+      "category": "Верхняя одежда",
+      "description": "Эксклюзивная модель ветровка-рубашка от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Пальто",
+      "price": "33000 ₽",
+      "category": "Верхняя одежда",
+      "description": "Эксклюзивная модель пальто от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Платье бохо",
+      "price": "25000 ₽",
+      "category": "Платья",
+      "description": "Эксклюзивная модель платье бохо от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Куртка",
+      "price": "18000 ₽",
+      "category": "Верхняя одежда",
+      "description": "Эксклюзивная модель куртка от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Плащ из кожи",
+      "price": "55000 ₽",
+      "category": "Верхняя одежда",
+      "description": "Эксклюзивная модель плащ из кожи от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Куртка из кожи",
+      "price": "45000 ₽",
+      "category": "Верхняя одежда",
+      "description": "Эксклюзивная модель куртка из кожи от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Тренч с бахромой",
+      "price": "20000 ₽",
+      "category": "Верхняя одежда",
+      "description": "Эксклюзивная модель тренч с бахромой от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Тренч",
+      "price": "18000 ₽",
+      "category": "Верхняя одежда",
+      "description": "Эксклюзивная модель тренч от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Платье (модель 1)",
+      "price": "25000 ₽",
+      "category": "Платья",
+      "description": "Эксклюзивная модель платье (модель 1) от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Платье (модель 2)",
+      "price": "25000 ₽",
+      "category": "Платья",
+      "description": "Эксклюзивная модель платье (модель 2) от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Платье (модель 3)",
+      "price": "25000 ₽",
+      "category": "Платья",
+      "description": "Эксклюзивная модель платье (модель 3) от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Платье (модель 4)",
+      "price": "25000 ₽",
+      "category": "Платья",
+      "description": "Эксклюзивная модель платье (модель 4) от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Платье (модель 5)",
+      "price": "28000 ₽",
+      "category": "Платья",
+      "description": "Эксклюзивная модель платье (модель 5) от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Платье (модель 6)",
+      "price": "27000 ₽",
+      "category": "Платья",
+      "description": "Эксклюзивная модель платье (модель 6) от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Куртка-жакет",
+      "price": "30000 ₽",
+      "category": "Верхняя одежда",
+      "description": "Эксклюзивная модель куртка-жакет от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Куртка (модель 2)",
+      "price": "22000 ₽",
+      "category": "Верхняя одежда",
+      "description": "Эксклюзивная модель куртка (модель 2) от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Жакет-пальто",
+      "price": "26000 ₽",
+      "category": "Верхняя одежда",
+      "description": "Эксклюзивная модель жакет-пальто от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Пальто (модель 2)",
+      "price": "37000 ₽",
+      "category": "Верхняя одежда",
+      "description": "Эксклюзивная модель пальто (модель 2) от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Пальто (модель 3)",
+      "price": "37000 ₽",
+      "category": "Верхняя одежда",
+      "description": "Эксклюзивная модель пальто (модель 3) от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Костюм из экозамши (вариант 2)",
+      "price": "28000 ₽",
+      "category": "Костюмы",
+      "description": "Эксклюзивная модель костюм из экозамши (вариант 2) от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Костюм из экозамши (вариант 3)",
+      "price": "28000 ₽",
+      "category": "Костюмы",
+      "description": "Эксклюзивная модель костюм из экозамши (вариант 3) от дизайнеров Костюмерка",
+      "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=600&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=600&fit=crop"
+      ]
+    }
+  ],
+  "total_products": 47,
+  "categories": {
+    "Верхняя одежда": [
+      {
+        "id": 3,
+        "name": "Пальто-плащ",
+        "price": "50000 ₽",
+        "category": "Верхняя одежда",
+        "description": "Пальто из премиальной шерсти с вышивкой ручной работы, в комплекте пояс для самого красивого силуэта",
+        "image": "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=500&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Тренч трансформер",
+        "price": "25000 ₽",
+        "category": "Верхняя одежда",
+        "description": "Универсальный тренч с возможностью трансформации стиля",
+        "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Плащ-пальто",
+        "price": "50000 ₽",
+        "category": "Верхняя одежда",
+        "description": "Элегантный плащ-пальто для истинных ценителей стиля",
+        "image": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 17,
+        "name": "Тренч с бахромой миди",
+        "price": "21000 ₽",
+        "category": "Верхняя одежда",
+        "description": "Стильный тренч миди длины с элегантной бахромой",
+        "image": "https://images.unsplash.com/photo-1585497262862-8f6421b9c522?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1585497262862-8f6421b9c522?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 18,
+        "name": "Куртка с бахромой из эко-замши",
+        "price": "18000 ₽",
+        "category": "Верхняя одежда",
+        "description": "Модная куртка из эко-замши с декоративной бахромой",
+        "image": "https://images.unsplash.com/photo-1603851946761-b9b55fcce05c?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1603851946761-b9b55fcce05c?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 19,
+        "name": "Тренч-жакет с бахромой",
+        "price": "26000 ₽",
+        "category": "Верхняя одежда",
+        "description": "Эксклюзивная модель тренч-жакет с бахромой от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 22,
+        "name": "Куртка с бахромой лео",
+        "price": "18000 ₽",
+        "category": "Верхняя одежда",
+        "description": "Эксклюзивная модель куртка с бахромой лео от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 23,
+        "name": "Кейп из эко-замши",
+        "price": "6000 ₽",
+        "category": "Верхняя одежда",
+        "description": "Эксклюзивная модель кейп из эко-замши от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 24,
+        "name": "Пальто премиум",
+        "price": "47000 ₽",
+        "category": "Верхняя одежда",
+        "description": "Эксклюзивная модель пальто премиум от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 25,
+        "name": "Тренч из экозамши",
+        "price": "21000 ₽",
+        "category": "Верхняя одежда",
+        "description": "Эксклюзивная модель тренч из экозамши от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 27,
+        "name": "Ветровка-рубашка",
+        "price": "12000 ₽",
+        "category": "Верхняя одежда",
+        "description": "Эксклюзивная модель ветровка-рубашка от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 28,
+        "name": "Пальто",
+        "price": "33000 ₽",
+        "category": "Верхняя одежда",
+        "description": "Эксклюзивная модель пальто от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 30,
+        "name": "Куртка",
+        "price": "18000 ₽",
+        "category": "Верхняя одежда",
+        "description": "Эксклюзивная модель куртка от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 31,
+        "name": "Плащ из кожи",
+        "price": "55000 ₽",
+        "category": "Верхняя одежда",
+        "description": "Эксклюзивная модель плащ из кожи от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 32,
+        "name": "Куртка из кожи",
+        "price": "45000 ₽",
+        "category": "Верхняя одежда",
+        "description": "Эксклюзивная модель куртка из кожи от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 33,
+        "name": "Тренч с бахромой",
+        "price": "20000 ₽",
+        "category": "Верхняя одежда",
+        "description": "Эксклюзивная модель тренч с бахромой от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 34,
+        "name": "Тренч",
+        "price": "18000 ₽",
+        "category": "Верхняя одежда",
+        "description": "Эксклюзивная модель тренч от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 41,
+        "name": "Куртка-жакет",
+        "price": "30000 ₽",
+        "category": "Верхняя одежда",
+        "description": "Эксклюзивная модель куртка-жакет от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 42,
+        "name": "Куртка (модель 2)",
+        "price": "22000 ₽",
+        "category": "Верхняя одежда",
+        "description": "Эксклюзивная модель куртка (модель 2) от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 43,
+        "name": "Жакет-пальто",
+        "price": "26000 ₽",
+        "category": "Верхняя одежда",
+        "description": "Эксклюзивная модель жакет-пальто от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 44,
+        "name": "Пальто (модель 2)",
+        "price": "37000 ₽",
+        "category": "Верхняя одежда",
+        "description": "Эксклюзивная модель пальто (модель 2) от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 45,
+        "name": "Пальто (модель 3)",
+        "price": "37000 ₽",
+        "category": "Верхняя одежда",
+        "description": "Эксклюзивная модель пальто (модель 3) от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+        ]
+      }
+    ],
+    "Платья": [
+      {
+        "id": 12,
+        "name": "Платье с итальянским кружевом",
+        "price": "25000 ₽",
+        "category": "Платья",
+        "description": "Роскошное платье с эксклюзивным итальянским кружевом",
+        "image": "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Платье Шоколад",
+        "price": "25000 ₽",
+        "category": "Платья",
+        "description": "Элегантное платье в благородном шоколадном оттенке",
+        "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 29,
+        "name": "Платье бохо",
+        "price": "25000 ₽",
+        "category": "Платья",
+        "description": "Эксклюзивная модель платье бохо от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 35,
+        "name": "Платье (модель 1)",
+        "price": "25000 ₽",
+        "category": "Платья",
+        "description": "Эксклюзивная модель платье (модель 1) от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 36,
+        "name": "Платье (модель 2)",
+        "price": "25000 ₽",
+        "category": "Платья",
+        "description": "Эксклюзивная модель платье (модель 2) от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 37,
+        "name": "Платье (модель 3)",
+        "price": "25000 ₽",
+        "category": "Платья",
+        "description": "Эксклюзивная модель платье (модель 3) от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 38,
+        "name": "Платье (модель 4)",
+        "price": "25000 ₽",
+        "category": "Платья",
+        "description": "Эксклюзивная модель платье (модель 4) от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 39,
+        "name": "Платье (модель 5)",
+        "price": "28000 ₽",
+        "category": "Платья",
+        "description": "Эксклюзивная модель платье (модель 5) от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 40,
+        "name": "Платье (модель 6)",
+        "price": "27000 ₽",
+        "category": "Платья",
+        "description": "Эксклюзивная модель платье (модель 6) от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop"
+        ]
+      }
+    ],
+    "Костюмы": [
+      {
+        "id": 6,
+        "name": "Костюм из экозамши",
+        "price": "28000 ₽",
+        "category": "Костюмы",
+        "description": "Стильный костюм из высококачественной экозамши",
+        "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Костюм в горошек",
+        "price": "22000 ₽",
+        "category": "Костюмы",
+        "description": "Классический костюм в элегантный горошек",
+        "image": "https://images.unsplash.com/photo-1603851946761-b9b55fcce05c?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1603851946761-b9b55fcce05c?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 14,
+        "name": "Костюм Розовый",
+        "price": "25000 ₽",
+        "category": "Костюмы",
+        "description": "Нежный костюм в изысканном розовом цвете",
+        "image": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Костюм Голубое небо",
+        "price": "25000 ₽",
+        "category": "Костюмы",
+        "description": "Воздушный костюм небесно-голубого оттенка",
+        "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 16,
+        "name": "Костюм Колокольчики",
+        "price": "25000 ₽",
+        "category": "Костюмы",
+        "description": "Романтичный костюм с принтом колокольчики",
+        "image": "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 20,
+        "name": "Костюм из вареного денима",
+        "price": "28000 ₽",
+        "category": "Костюмы",
+        "description": "Эксклюзивная модель костюм из вареного денима от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 46,
+        "name": "Костюм из экозамши (вариант 2)",
+        "price": "28000 ₽",
+        "category": "Костюмы",
+        "description": "Эксклюзивная модель костюм из экозамши (вариант 2) от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 47,
+        "name": "Костюм из экозамши (вариант 3)",
+        "price": "28000 ₽",
+        "category": "Костюмы",
+        "description": "Эксклюзивная модель костюм из экозамши (вариант 3) от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=600&fit=crop"
+        ]
+      }
+    ],
+    "Корсеты": [
+      {
+        "id": 7,
+        "name": "Корсет с эффектом утяжки",
+        "price": "8000 ₽",
+        "category": "Корсеты",
+        "description": "Изящный корсет для создания идеального силуэта",
+        "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Корсет с эффектом утяжки (вариант 2)",
+        "price": "8000 ₽",
+        "category": "Корсеты",
+        "description": "Альтернативная модель корсета с утяжкой",
+        "image": "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1566479179817-1debb6d5e7ee?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Корсет с эффектом утяжки (вариант 3)",
+        "price": "8000 ₽",
+        "category": "Корсеты",
+        "description": "Третий вариант элегантного корсета",
+        "image": "https://images.unsplash.com/photo-1580651214613-d17c8fc9cb55?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1580651214613-d17c8fc9cb55?w=500&h=600&fit=crop"
+        ]
+      }
+    ],
+    "Аксессуары": [
+      {
+        "id": 1,
+        "name": "Перчатки митенки укорочённые",
+        "price": "8000 ₽",
+        "category": "Аксессуары",
+        "description": "Изысканные митенки из натуральной кожи с вышивкой ручной работы",
+        "image": "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=500&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1585497262862-8f6421b9c522?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Перчатки митенки",
+        "price": "10000 ₽",
+        "category": "Аксессуары",
+        "description": "Элегантные длинные митенки премиум качества",
+        "image": "https://images.unsplash.com/photo-1585497262862-8f6421b9c522?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1585497262862-8f6421b9c522?w=500&h=600&fit=crop"
+        ]
+      }
+    ],
+    "Юбки": [
+      {
+        "id": 11,
+        "name": "Юбка из эко-замши мультиколор",
+        "price": "12000 ₽",
+        "category": "Юбки",
+        "description": "Юбка с бахромой из чёрной эко замши, отличный вариант для работы, выходов и на каждый день",
+        "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=600&fit=crop"
+        ]
+      },
+      {
+        "id": 26,
+        "name": "Юбка",
+        "price": "15000 ₽",
+        "category": "Юбки",
+        "description": "Эксклюзивная модель юбка от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=600&fit=crop"
+        ]
+      }
+    ],
+    "Брюки": [
+      {
+        "id": 21,
+        "name": "Брюки-парашюты",
+        "price": "11000 ₽",
+        "category": "Брюки",
+        "description": "Эксклюзивная модель брюки-парашюты от дизайнеров Костюмерка",
+        "image": "https://images.unsplash.com/photo-1603851946761-b9b55fcce05c?w=500&h=600&fit=crop",
+        "gallery": [
+          "https://images.unsplash.com/photo-1603851946761-b9b55fcce05c?w=500&h=600&fit=crop"
+        ]
+      }
+    ]
+  },
+  "vk_integration": {
+    "group_id": "228925833",
+    "api_version": "5.131",
+    "sync_interval_minutes": 30
+  },
+  "hero_content": {
+    "title": "KOSTUMERKA",
+    "subtitle": "Это не просто одежда. Это манифест индивидуальности и самовыражения.",
+    "cta_text": "Исследовать коллекцию"
+  }
+}
