@@ -2,7 +2,36 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Админ-панель | КОСТЮМЕРКА</title>
+    <script src="admin-auth.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            if (!window.AdminAuth.init()) {
+                // Остановить дальнейший рендер!
+                return;
+            }
+            document.getElementById('admin-content').style.display = 'block';
+            // Здесь инициировать прочий JS админки
+        });
+    </script>
+    <style>
+        body { font-family: Arial,sans-serif; }
+        #admin-content { display:none; max-width:700px; margin:32px auto; background:#fff; border-radius:12px; box-shadow:0 6px 32px #9993; padding:36px; }
+    </style>
+</head>
+<body>
+    <div id="admin-content">
+        <button onclick="window.AdminAuth.logout()">Выйти</button>
+        <h1>Админ-панель</h1>
+        <p>Защищённая страница! Только после ввода пароля <b>admin123</b> этот контент доступен.</p>
+    </div>
+</body>
+</html>
+
     <meta name="description" content="КОСТЮМЕРКА - Дизайнерская одежда премиум класса. Эксклюзивные коллекции от fashion-стилиста Ирины Радкевич и дизайнера Оксаны Школьниковой. Шоу-рум в Брянске.">
     <meta name="keywords" content="дизайнерская одежда, костюмерка, брянск, fashion, платья, костюмы, корсеты, luxury fashion">
     <meta name="author" content="КОСТЮМЕРКА">
