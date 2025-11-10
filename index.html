@@ -2,42 +2,522 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Костюмерка | Главная</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="КОСТЮМЕРКА - Дизайнерская одежда премиум класса. Эксклюзивные коллекции от fashion-стилиста Ирины Радкевич и дизайнера Оксаны Школьниковой. Шоу-рум в Брянске.">
     <meta name="keywords" content="дизайнерская одежда, костюмерка, брянск, fashion, платья, костюмы, корсеты, luxury fashion">
     <meta name="author" content="КОСТЮМЕРКА">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kostumerka.netlify.app/">
+    <meta property="og:title" content="КОСТЮМЕРКА | Дизайнерская Одежда">
+    <meta property="og:description" content="Эксклюзивная дизайнерская одежда для смелых девушек. Манифест индивидуальности и самовыражения.">
+    <meta property="og:image" content="https://kostumerka.netlify.app/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kostumerka.netlify.app/">
+    <meta property="twitter:title" content="КОСТЮМЕРКА | Дизайнерская Одежда">
+    <meta property="twitter:description" content="Эксклюзивная дизайнерская одежда для смелых девушек. Манифест индивидуальности и самовыражения.">
+    <meta property="twitter:image" content="https://kostumerka.netlify.app/og-image.jpg">
+
+    <title>КОСТЮМЕРКА | Дизайнерская Одежда</title>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAA">
+    
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ClothingStore",
+      "name": "КОСТЮМЕРКА",
+      "description": "Дизайнерская одежда премиум класса",
+      "url": "https://kostumerka.netlify.app",
+      "telephone": "+7-919-193-42-72",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "пр-т Ленина, 12",
+        "addressLocality": "Брянск",
+        "addressCountry": "RU"
+      },
+      "sameAs": [
+        "https://vk.com/kostumerka_fashion",
+        "https://t.me/irina_fashionstyle"
+      ]
+    }
+    </script>
 </head>
 <body>
-    <!-- Весь публичный контент сайта: -->
-    <header>
-        <nav>
-            <a href="/">Главная</a> |
-            <a href="/catalog.html">Каталог</a> |
-            <a href="/collections.html">Коллекции</a> |
-            <a href="/about.html">О бренде</a> |
-            <a href="/contacts.html">Контакты</a>
-        </nav>
+    <!-- Admin Panel -->
+    <div id="admin-panel" class="admin-panel hidden">
+        <div class="admin-panel__content">
+            <div class="admin-panel__header">
+                <h3>ПАНЕЛЬ АДМИНИСТРАТОРА</h3>
+                <div class="admin-accent-line"></div>
+            </div>
+            <div class="admin-status">
+                <div class="status-indicator">
+                    <span class="status-light" id="vk-status-light"></span>
+                    <span id="vk-status-text">VK не подключен</span>
+                </div>
+                <div class="last-sync" id="last-sync">
+                    Последняя синхронизация: никогда
+                </div>
+            </div>
+            <div class="admin-controls">
+                <button class="btn btn--luxury" id="connect-vk-btn">Подключить VK</button>
+                <button class="btn btn--outline-luxury" id="sync-now-btn" disabled>Синхронизировать</button>
+                <button class="btn btn--outline-luxury" id="auto-sync-btn" disabled>
+                    <span id="auto-sync-text">Авто-синхронизация</span>
+                </button>
+            </div>
+            <div class="sync-info" id="sync-info">
+                <div>Товаров синхронизировано: <span id="synced-count">0</span></div>
+                <div>Интервал: 30 минут</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Luxury Header -->
+    <header class="luxury-header">
+        <div class="luxury-container">
+            <nav class="luxury-nav">
+                <div class="luxury-nav__brand">
+                    <button class="admin-btn" id="admin-btn" aria-label="Панель администратора">АДМИН</button>
+                    <div class="brand-identity">
+                        <h1 class="brand-title">КОСТЮМЕРКА</h1>
+                        <div class="brand-accent-line"></div>
+                        <span class="brand-subtitle">ДИЗАЙНЕРСКАЯ ОДЕЖДА</span>
+                    </div>
+                </div>
+                <div class="luxury-nav__menu">
+                    <button class="nav-item nav-item--active" data-section="home">ГЛАВНАЯ</button>
+                    <button class="nav-item" data-section="catalog">КАТАЛОГ</button>
+                    <button class="nav-item" data-section="collections">КОЛЛЕКЦИИ</button>
+                    <button class="nav-item" data-section="about">О БРЕНДЕ</button>
+                    <button class="nav-item" data-section="contacts">КОНТАКТЫ</button>
+                    <button class="nav-item nav-item--cart" data-section="cart">
+                        <span>КОРЗИНА</span>
+                        <span class="cart-badge">(<span class="cart-count">0</span>)</span>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Мобильное меню">≡</button>
+            </nav>
+        </div>
     </header>
-    <main>
-        <h1>КОСТЮМЕРКА</h1>
-        <p>Это не просто одежда. Это манифест индивидуальности и самовыражения!</p>
-        <!-- Далее — карточки товаров, каталог, формы примерки, корзина -->
-        <section id="catalog">
-            <!-- Товары выводятся тут -->
+
+    <!-- Main Content -->
+    <main class="luxury-main">
+        <!-- Hero Section -->
+        <section id="home" class="section section--active">
+            <div class="luxury-hero">
+                <div class="hero-background">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-pattern"></div>
+                </div>
+                <div class="luxury-container">
+                    <div class="hero-content">
+                        <h2 class="hero-title">KOSTUMERKA</h2>
+                        <div class="hero-subtitle">ЭТО НЕ ПРОСТО ОДЕЖДА</div>
+                        <div class="hero-description">Это манифест индивидуальности и самовыражения</div>
+                        <div class="hero-features">
+                            <div class="luxury-feature">ЭКСКЛЮЗИВНОСТЬ</div>
+                            <div class="luxury-feature">ПРОВЕРЕННЫЕ МАТЕРИАЛЫ</div>
+                            <div class="luxury-feature">ДЛЯ СМЕЛЫХ ДЕВУШЕК</div>
+                            <div class="luxury-feature">СЕКСУАЛЬНОСТЬ</div>
+                        </div>
+                        <div class="hero-actions">
+                            <button class="btn btn--luxury-primary" data-section="catalog">ПОСМОТРЕТЬ КАТАЛОГ</button>
+                            <button class="btn btn--luxury-outline" data-section="fitting">ЗАПИСАТЬСЯ НА ПРИМЕРКУ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="luxury-divider">
+                    <div class="divider-line"></div>
+                    <div class="divider-accent"></div>
+                    <div class="divider-line"></div>
+                </div>
+            </div>
+
+            <!-- Featured Products -->
+            <div class="luxury-container">
+                <div class="section-header">
+                    <h3 class="luxury-section-title">ИЗБРАННЫЕ ТВОРЕНИЯ</h3>
+                    <div class="section-accent"></div>
+                </div>
+                <div class="luxury-featured" id="featured-products">
+                    <!-- Products will be loaded by JS -->
+                </div>
+            </div>
         </section>
-        <section id="contact-info">
-            VK: <a href="https://vk.com/kostumerka_fashion">kostumerka_fashion</a><br>
-            TG: <a href="https://t.me/irina_fashionstyle">irina_fashionstyle</a><br>
-            Телефон: <a href="tel:+79191934272">+7-919-193-42-72</a><br>
-            Адрес: Брянск, пр-т Ленина, 12
+
+        <!-- Collections Section -->
+        <section id="collections" class="section">
+            <div class="luxury-container">
+                <div class="section-header">
+                    <h2 class="luxury-section-title">КОЛЛЕКЦИИ</h2>
+                    <div class="section-accent"></div>
+                </div>
+                <div class="collections-grid">
+                    <div class="collection-card" data-category="Верхняя одежда">
+                        <div class="collection-image">
+                            <div class="collection-overlay">ВЕРХНЯЯ ОДЕЖДА</div>
+                        </div>
+                        <div class="collection-info">
+                            <h4>ВЕРХНЯЯ ОДЕЖДА</h4>
+                            <p>Пальто, тренчи, куртки премиум класса</p>
+                            <span class="collection-count">22 модели</span>
+                        </div>
+                    </div>
+                    <div class="collection-card" data-category="Платья">
+                        <div class="collection-image collection-image--dresses">
+                            <div class="collection-overlay">ПЛАТЬЯ</div>
+                        </div>
+                        <div class="collection-info">
+                            <h4>ПЛАТЬЯ</h4>
+                            <p>Роскошные платья с итальянским кружевом</p>
+                            <span class="collection-count">9 моделей</span>
+                        </div>
+                    </div>
+                    <div class="collection-card" data-category="Костюмы">
+                        <div class="collection-image collection-image--suits">
+                            <div class="collection-overlay">КОСТЮМЫ</div>
+                        </div>
+                        <div class="collection-info">
+                            <h4>КОСТЮМЫ</h4>
+                            <p>Элегантные костюмы из экозамши и премиальных тканей</p>
+                            <span class="collection-count">8 моделей</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Catalog Section -->
+        <section id="catalog" class="section">
+            <div class="luxury-container">
+                <div class="section-header">
+                    <h2 class="luxury-section-title">КАТАЛОГ ТВОРЕНИЙ</h2>
+                    <div class="section-accent"></div>
+                    <p class="catalog-subtitle">47 эксклюзивных моделей от дизайнеров Костюмерка</p>
+                </div>
+                
+                <div class="luxury-catalog-controls">
+                    <div class="search-luxury">
+                        <input type="text" id="search-input" class="luxury-input" placeholder="Поиск товаров...">
+                        <div class="input-accent"></div>
+                    </div>
+                    
+                    <div class="luxury-filters">
+                        <select id="category-filter" class="luxury-select">
+                            <option value="">ВСЕ КАТЕГОРИИ (47)</option>
+                            <option value="Верхняя одежда">ВЕРХНЯЯ ОДЕЖДА (22)</option>
+                            <option value="Платья">ПЛАТЬЯ (9)</option>
+                            <option value="Костюмы">КОСТЮМЫ (8)</option>
+                            <option value="Корсеты">КОРСЕТЫ (3)</option>
+                            <option value="Аксессуары">АКСЕССУАРЫ (2)</option>
+                            <option value="Юбки">ЮБКИ (2)</option>
+                            <option value="Брюки">БРЮКИ (1)</option>
+                        </select>
+                        
+                        <select id="price-sort" class="luxury-select">
+                            <option value="">СОРТИРОВКА ПО ЦЕНЕ</option>
+                            <option value="asc">ПО ВОЗРАСТАНИЮ</option>
+                            <option value="desc">ПО УБЫВАНИЮ</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="products-counter">
+                    <span id="products-count">Показано товаров: 47</span>
+                </div>
+
+                <div class="luxury-products-grid" id="products-grid">
+                    <!-- Products will be loaded by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="luxury-container">
+                <div class="section-header">
+                    <h2 class="luxury-section-title">О БРЕНДЕ КОСТЮМЕРКА</h2>
+                    <div class="section-accent"></div>
+                </div>
+                <div class="luxury-about">
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p class="luxury-paragraph">«Костюмерка» — это бренд уникальных дизайнерских изделий двух талантливых и творческих людей <strong>Ирины Радкевич</strong> (fashion-стилист) и <strong>Оксаны Школьниковой</strong> (дизайнер), которые знают, что такое индивидуальность, манкость и уникальность каждой девушки.</p>
+                            <p class="luxury-paragraph">Kostumerka — это не просто одежда. Это манифест индивидуальности и самовыражения. Каждая вещь создается с особой любовью к деталям и только из проверенных материалов.</p>
+                            <p class="luxury-paragraph">Мы создаем решения для смелых девушек, которые знают себе цену и не боятся выражать свою сексуальность через стиль.</p>
+                        </div>
+                        <div class="about-features">
+                            <div class="luxury-feature-card">
+                                <div class="feature-icon">◊</div>
+                                <h4>ЭКСКЛЮЗИВНОСТЬ</h4>
+                                <p>Каждая модель выпускается ограниченным тиражом для создания уникального образа</p>
+                            </div>
+                            <div class="luxury-feature-card">
+                                <div class="feature-icon">◊</div>
+                                <h4>ПРОВЕРЕННЫЕ МАТЕРИАЛЫ</h4>
+                                <p>Используем только качественные ткани и фурнитуру от проверенных поставщиков</p>
+                            </div>
+                            <div class="luxury-feature-card">
+                                <div class="feature-icon">◊</div>
+                                <h4>ИНДИВИДУАЛЬНЫЙ ПОДХОД</h4>
+                                <p>Примерка в шоу-руме по предварительной записи с персональным обслуживанием</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacts Section -->
+        <section id="contacts" class="section">
+            <div class="luxury-container">
+                <div class="section-header">
+                    <h2 class="luxury-section-title">КОНТАКТЫ</h2>
+                    <div class="section-accent"></div>
+                </div>
+                <div class="luxury-contacts">
+                    <div class="contact-card">
+                        <h3>ШОУ-РУМ КОСТЮМЕРКА</h3>
+                        <div class="contact-accent"></div>
+                        <div class="contact-item">
+                            <span class="contact-label">АДРЕС:</span>
+                            <span>Брянск, пр-т Ленина, 12</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">ТЕЛЕФОНЫ:</span>
+                            <span><a href="tel:+79191934272">+7-919-193-42-72</a> (Ирина)</span>
+                            <span><a href="tel:+79206056001">+79206056001</a> (Оксана)</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">TELEGRAM:</span>
+                            <span><a href="https://t.me/irina_fashionstyle" target="_blank">@irina_fashionstyle</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">VK:</span>
+                            <a href="https://vk.com/kostumerka_fashion" target="_blank">kostumerka_fashion</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">VK МАРКЕТ:</span>
+                            <a href="https://vk.com/market-228925833" target="_blank">Магазин ВКонтакте</a>
+                        </div>
+                    </div>
+                    <div class="services-card">
+                        <h3>УСЛУГИ</h3>
+                        <div class="contact-accent"></div>
+                        <ul class="luxury-services-list">
+                            <li>Примерка по предварительной записи в шоу-руме</li>
+                            <li>Бесплатная доставка курьером по Брянску с возможностью примерки</li>
+                            <li>Доставка по России (оплачивается клиентом)</li>
+                            <li>Доставка по миру</li>
+                        </ul>
+                        <button class="btn btn--luxury-primary" data-section="fitting">ЗАПИСАТЬСЯ НА ПРИМЕРКУ</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cart Section -->
+        <section id="cart" class="section">
+            <div class="luxury-container">
+                <div class="section-header">
+                    <h2 class="luxury-section-title">КОРЗИНА</h2>
+                    <div class="section-accent"></div>
+                </div>
+                <div id="cart-content" class="luxury-cart">
+                    <div class="empty-cart">
+                        <div class="empty-cart-icon">◊</div>
+                        <p>Ваша корзина пуста</p>
+                        <button class="btn btn--luxury-primary" data-section="catalog">ПЕРЕЙТИ К ПОКУПКАМ</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fitting Section -->
+        <section id="fitting" class="section">
+            <div class="luxury-container">
+                <div class="section-header">
+                    <h2 class="luxury-section-title">ЗАПИСЬ НА ПРИМЕРКУ</h2>
+                    <div class="section-accent"></div>
+                    <p class="fitting-subtitle">Персональная примерка в нашем шоу-руме на пр-т Ленина, 12</p>
+                </div>
+                <form class="luxury-form" id="fitting-form">
+                    <div class="form-section">
+                        <label class="luxury-label">ВЫБЕРИТЕ ТОВАРЫ ДЛЯ ПРИМЕРКИ:</label>
+                        <div id="products-for-fitting" class="products-for-fitting">
+                            <!-- Products checkboxes will be loaded by JS -->
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="luxury-label" for="fitting-date">ДАТА:</label>
+                            <input type="date" id="fitting-date" class="luxury-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="luxury-label" for="fitting-time">ВРЕМЯ:</label>
+                            <select id="fitting-time" class="luxury-select" required>
+                                <option value="">ВЫБЕРИТЕ ВРЕМЯ</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="luxury-label" for="client-name">ВАШЕ ИМЯ:</label>
+                            <input type="text" id="client-name" class="luxury-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="luxury-label" for="client-phone">ТЕЛЕФОН:</label>
+                            <input type="tel" id="client-phone" class="luxury-input" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="luxury-label" for="client-comments">ДОПОЛНИТЕЛЬНЫЕ ПОЖЕЛАНИЯ:</label>
+                        <textarea id="client-comments" class="luxury-input luxury-textarea" rows="4" placeholder="Укажите размеры, предпочтения по времени, особые пожелания..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn--luxury-primary btn--full-width">ЗАПИСАТЬСЯ НА ПРИМЕРКУ</button>
+                </form>
+            </div>
         </section>
     </main>
-    <footer>
-        <a href="privacy-policy.html">Политика конфиденциальности</a> |
-        <a href="oferta.html">Договор оферты</a><br>
-        &copy; 2024 Костюмерка. Все права защищены.
+
+    <!-- Luxury Footer -->
+    <footer class="luxury-footer">
+        <div class="luxury-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h4>КОСТЮМЕРКА</h4>
+                    <div class="footer-accent"></div>
+                    <p>Дизайнерская одежда премиум класса</p>
+                    <div class="footer-social">
+                        <a href="https://vk.com/kostumerka_fashion" target="_blank" aria-label="VK">VK</a>
+                        <a href="https://t.me/irina_fashionstyle" target="_blank" aria-label="Telegram">TG</a>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <p>© 2024 Костюмерка. Все права защищены.</p>
+                    <p>Создано с любовью к моде и деталям</p>
+                    <p>Брянск, пр-т Ленина, 12 | <a href="tel:+79191934272">+7-919-193-42-72</a></p>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="luxury-modal hidden">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Закрыть">×</button>
+            <div class="product-details" id="product-details">
+                <!-- Product details will be loaded by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="luxury-modal hidden">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Закрыть">×</button>
+            <div class="section-header">
+                <h3 class="luxury-section-title">ОФОРМЛЕНИЕ ЗАКАЗА</h3>
+                <div class="section-accent"></div>
+            </div>
+            <form id="checkout-form" class="luxury-form">
+                <div class="form-group">
+                    <label class="luxury-label" for="checkout-name">ВАШЕ ИМЯ:</label>
+                    <input type="text" id="checkout-name" class="luxury-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="luxury-label" for="checkout-phone">ТЕЛЕФОН:</label>
+                    <input type="tel" id="checkout-phone" class="luxury-input" placeholder="+7 (___) ___-__-__" required>
+                </div>
+                <div class="form-group">
+                    <label class="luxury-label" for="checkout-email">EMAIL:</label>
+                    <input type="email" id="checkout-email" class="luxury-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="luxury-label" for="checkout-address">АДРЕС ДОСТАВКИ:</label>
+                    <textarea id="checkout-address" class="luxury-input luxury-textarea" rows="3" placeholder="Укажите полный адрес для доставки..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="luxury-label" for="checkout-payment">СПОСОБ ОПЛАТЫ:</label>
+                    <select id="checkout-payment" class="luxury-select" required>
+                        <option value="">ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ</option>
+                        <option value="card">БАНКОВСКАЯ КАРТА</option>
+                        <option value="transfer">БАНКОВСКИЙ ПЕРЕВОД</option>
+                        <option value="cash">НАЛИЧНЫЕ ПРИ ПОЛУЧЕНИИ</option>
+                    </select>
+                </div>
+                <div class="checkout-total">
+                    <div class="total-accent"></div>
+                    <h4>ИТОГО: <span id="checkout-total-amount">0 ₽</span></h4>
+                </div>
+                <button type="submit" class="btn btn--luxury-primary btn--full-width">ОФОРМИТЬ ЗАКАЗ</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- VK Login Modal -->
+    <div id="vk-login-modal" class="luxury-modal hidden">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Закрыть">×</button>
+            <div class="section-header">
+                <h3 class="luxury-section-title">ПОДКЛЮЧЕНИЕ К VK</h3>
+                <div class="section-accent"></div>
+            </div>
+            <div class="vk-login-content">
+                <p class="luxury-paragraph">Для синхронизации товаров из VK группы необходимо авторизоваться.</p>
+                <div class="vk-info-card">
+                    <div class="vk-info-item">
+                        <span class="info-label">ГРУППА:</span>
+                        <span>Костюмерка (ID: 228925833)</span>
+                    </div>
+                    <div class="vk-info-item">
+                        <span class="info-label">СИНХРОНИЗАЦИЯ:</span>
+                        <span>товары из раздела "Товары" группы</span>
+                    </div>
+                </div>
+                <button class="btn btn--luxury-primary" id="vk-auth-btn">АВТОРИЗОВАТЬСЯ ЧЕРЕЗ VK</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading indicator -->
+    <div id="loading-indicator" class="loading-indicator hidden">
+        <div class="loading-spinner">◊</div>
+        <p>Загрузка...</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://vk.com/js/api/openapi.js" defer></script>
+    <script src="app.js"></script>
 </body>
 </html>
