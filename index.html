@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+<голова>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="КОСТЮМЕРКА - Дизайнерская одежда премиум класса. Эксклюзивные коллекции от fashion-стилиста Ирины Радкевич и дизайнера Оксаны Школьниковой. Шоу-рум в Брянске.">
-    <meta name="keywords" content="дизайнерская одежда, костюмерка, брянск, fashion, платья, костюмы, корсеты, luxury fashion">
+    <meta name="description" content="КОСТЮМЕРКА коллекция - Дизайнерская одежда премиум класса. Эксклюзивные от fashion-стилиста Ирины Радкевич и дизайнера Оксаны Школьниковой. Шоу-рум в Брянске.">
+    <meta name="keywords" content="дизайнерская одежда, костюмерка, брянск, мода, платья, костюмы, корсеты, роскошная мода">
     <meta name="author" content="КОСТЮМЕРКА">
     
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
+    <!-- Открыть график / Facebook -->
+    <meta property="og:type" content="веб-сайт">
     <meta property="og:url" content="https://kostumerka.netlify.app/">
     <meta property="og:title" content="КОСТЮМЕРКА | Дизайнерская Одежда">
     <meta property="og:description" content="Эксклюзивная дизайнерская одежда для смелых девушек. Манифест индивидуальности и самовыражения.">
     <meta property="og:image" content="https://kostumerka.netlify.app/og-image.jpg">
 
-    <!-- Twitter -->
+    <!-- Твиттер -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://kostumerka.netlify.app/">
     <meta property="twitter:title" content="КОСТЮМЕРКА | Дизайнерская Одежда">
@@ -23,27 +23,27 @@
 
     <title>КОСТЮМЕРКА | Дизайнерская Одежда</title>
     
-    <!-- Preconnect for performance -->
+    <!-- Предварительное подключение для повышения производительности -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Favicon -->
+    <!-- Фавикон -->
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAA">
     
     <link rel="stylesheet" href="style.css">
     
-    <!-- Structured Data for SEO -->
+    <!-- Структурированные данные для SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ClothingStore",
-      "name": "КОСТЮМЕРКА",
-      "description": "Дизайнерская одежда премиум класса",
+      "@type": "Магазин Одежды",
+      "имя": "КОСТЮМЕРКА",
+      "description": "Дизайнерская одежда премиум-класса",
       "url": "https://kostumerka.netlify.app",
-      "telephone": "+7-919-193-42-72",
-      "address": {
-        "@type": "PostalAddress",
+      "телефон": "+7-919-193-42-72",
+      "адрес": {
+        "@type": "ПочтовыйАдрес",
         "streetAddress": "пр-т Ленина, 12",
         "addressLocality": "Брянск",
         "addressCountry": "RU"
@@ -53,10 +53,10 @@
         "https://t.me/irina_fashionstyle"
       ]
     }
-    </script>
+    </скрипт>
 </head>
-<body>
-    <!-- Admin Panel -->
+<тело>
+    <!-- Панель администратора -->
     <div id="admin-panel" class="admin-panel hidden">
         <div class="admin-panel__content">
             <div class="admin-panel__header">
@@ -66,18 +66,18 @@
             <div class="admin-status">
                 <div class="status-indicator">
                     <span class="status-light" id="vk-status-light"></span>
-                    <span id="vk-status-text">VK не подключен</span>
+                    <span id="vk-status-text">ВК не подключен</span>
                 </div>
                 <div class="last-sync" id="last-sync">
                     Последняя синхронизация: никогда
                 </div>
             </div>
             <div class="admin-controls">
-                <button class="btn btn--luxury" id="connect-vk-btn">Подключить VK</button>
-                <button class="btn btn--outline-luxury" id="sync-now-btn" disabled>Синхронизировать</button>
-                <button class="btn btn--outline-luxury" id="auto-sync-btn" disabled>
-                    <span id="auto-sync-text">Авто-синхронизация</span>
-                </button>
+                <button class="btn btn--luxury" id="connect-vk-btn">Подключить ВК</button>
+                <button class="btn btn--outline-luxury" id="sync-now-btn" отключен>Синхронизировать</button>
+                <button class="btn btn--outline-luxury" id="auto-sync-btn" отключена>
+                    <span id="auto-sync-text">Автосинхронизация</span>
+                </кнопка>
             </div>
             <div class="sync-info" id="sync-info">
                 <div>Товаров синхронизировано: <span id="synced-count">0</span></div>
@@ -86,7 +86,7 @@
         </div>
     </div>
 
-    <!-- Luxury Header -->
+    <!-- Роскошный заголовок -->
     <header class="luxury-header">
         <div class="luxury-container">
             <nav class="luxury-nav">
@@ -107,16 +107,16 @@
                     <button class="nav-item nav-item--cart" data-section="cart">
                         <span>КОРЗИНА</span>
                         <span class="cart-badge">(<span class="cart-count">0</span>)</span>
-                    </button>
+                    </кнопка>
                 </div>
                 <button class="mobile-menu-btn" aria-label="Мобильное меню">≡</button>
-            </nav>
+            </нав>
         </div>
-    </header>
+    </заголовок>
 
-    <!-- Main Content -->
+    <!-- Основное содержание -->
     <main class="luxury-main">
-        <!-- Hero Section -->
+        <!-- Раздел героев -->
         <section id="home" class="section section--active">
             <div class="luxury-hero">
                 <div class="hero-background">
@@ -125,9 +125,9 @@
                 </div>
                 <div class="luxury-container">
                     <div class="hero-content">
-                        <h2 class="hero-title">KOSTUMERKA</h2>
+                        <h2 class="hero-title">КОСТЮМЕРКА</h2>
                         <div class="hero-subtitle">ЭТО НЕ ПРОСТО ОДЕЖДА</div>
-                        <div class="hero-description">Это манифест индивидуальности и самовыражения</div>
+                        <div class="hero-description">Это проявление индивидуальности и самовыражения</div>
                         <div class="hero-features">
                             <div class="luxury-feature">ЭКСКЛЮЗИВНОСТЬ</div>
                             <div class="luxury-feature">ПРОВЕРЕННЫЕ МАТЕРИАЛЫ</div>
